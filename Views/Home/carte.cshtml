@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Carte des Vols";
+}
+
+<h2 style="margin-bottom: 20px;">Carte des Vols Disponibles</h2>
+
+<div id="map" style="height: 600px;"></div>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        var map = L.map('map').setView([33.5, -7.6], 6); // Centré sur Casablanca
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Tu ajouteras ici plus tard les lignes depuis PostGIS
+    </script>
+}
