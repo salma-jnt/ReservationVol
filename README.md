@@ -265,18 +265,6 @@ Ouvrir l’adresse indiquée dans le terminal.
 - L’enregistrement du vol et de sa géométrie n’est pas atomique :
   le vol peut être enregistré même si la création de la ligne échoue.
 
-## Améliorations prévues
-
-- Implémenter une authentification avec ASP.NET Core Identity.
-- Définir les rôles Client et Gestionnaire.
-- Limiter chaque client à ses propres réservations.
-- Renforcer la validation et la protection antifalsification.
-- Utiliser des requêtes POST pour les opérations de suppression.
-- Gérer les places disponibles et les réservations concurrentes.
-- Harmoniser le schéma PostGIS et les migrations.
-- Synchroniser les géométries lors des modifications des vols.
-- Améliorer la gestion des dates et des fuseaux horaires.
-- Ajouter des tests automatisés et des captures d’écran.
 
 ## Compétences mobilisées
 
@@ -288,6 +276,3 @@ Ouvrir l’adresse indiquée dans le terminal.
 - Cartographie interactive avec Leaflet.
 - Filtrage et tri de données en JavaScript.
 
-## Réalisation
-
-**Salma Janati-Idrissi**
